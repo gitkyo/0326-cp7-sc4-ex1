@@ -209,6 +209,7 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
+    margin-top: 100px;
 }
 
 .hero-content h2 {
@@ -218,8 +219,7 @@ body {
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
+    margin-bottom: 2rem;    
 }
 
 .btn-primary {
@@ -258,24 +258,21 @@ body {
 }
 ```
 
-```
-
 **✅ Résultat attendu** : Une page avec un header fixe, une section hero attractive et une structure de base.
 
-> 🧪 **EXPÉRIMENTATION & APPRENTISSAGE** :
-> 
-> 1. **Test visuel** : Rechargez votre page. La transformation est-elle spectaculaire ?
-> 2. **Décortiquage CSS** : 
->    - Supprimez temporairement `position: fixed` du header. Que se passe-t-il ?
->    - Changez la couleur `#e74c3c` du bouton par `#3498db`. Aimez-vous mieux ?
-> 3. **Questions importantes** :
->    - Pourquoi utilise-t-on `box-sizing: border-box` ?
->    - À quoi sert `backdrop-filter: blur(10px)` ?
->    - Expliquez le gradient CSS à votre voisin
-> 4. **Défi** : Modifiez les couleurs du gradient pour créer votre propre ambiance
-> 5. **Discussion** : En groupe, identifiez 3 propriétés CSS que vous ne connaissiez pas
+🧪 **EXPÉRIMENTATION & APPRENTISSAGE** :
 
-> 💭 **Piste de réflexion** : Ce CSS utilise des techniques modernes (flexbox, transitions, gradients). Pourquoi est-ce important de les maîtriser aujourd'hui ?
+1. **Test visuel** : Rechargez votre page. La transformation est-elle spectaculaire ?
+2. **Décortiquage CSS** : A l'aide de l'inspecteur d'élément du navigateur (F12), onglet "Élements", vous trouverez sur la droite de cette fenêtre le CSS de l'élément HTML selectionné dans la partie à gauche.
+   - Supprimez temporairement `position: fixed` du header. Que se passe-t-il ?
+   - Changez la couleur `#e74c3c` du bouton par `#3498db`. Aimez-vous mieux ?
+3. **Questions importantes** :
+   - Sur le bouton, pourquoi utilise-t-on `border-radius: 50px;` ?
+   - Sur la section de class hero, monter le gradient CSS à votre voisin, essayer de modifier des valeurs et tester.
+4. **Défi** : Modifiez les couleurs du gradient pour créer votre propre ambiance, vous pouvez utiliser des générateurs de code gradient css comme : https://cssgradient.io/
+5. **Discussion** : En groupe, identifiez 3 propriétés CSS que vous ne connaissiez pas
+
+💭 **Piste de réflexion** : Ce CSS utilise des techniques modernes (flexbox, gradients). Pourquoi est-ce important de les maîtriser aujourd'hui ?
 
 ### 📱 Étape 2 : La Réactivité (1h)
 
@@ -353,8 +350,8 @@ Ajoutez ce code à la fin de votre fichier `styles.css` :
 >    - Cliquez sur l'icône mobile/tablette
 >    - Testez : iPhone SE (375px), iPad (768px), Desktop (1200px)
 > 2. **Expérimentation** :
->    - Changez `768px` par `600px`. Que remarquez-vous ?
->    - Ajoutez `border: 2px solid red;` à `.container` temporairement pour voir les zones
+>    - Pour la zone CSS de la media queries pour tablettes, changez le breackpoint (points de ruptures) `768px` par `600px`. Que remarquez-vous ?
+>    - Ajoutez `border: 2px solid red;` à `.container` temporairement pour voir les zones. Changez la taille de la fenêtre pour observer les changements sur la zone rouge.
 > 3. **Questions cruciales** :
 >    - Pourquoi commence-t-on par mobile (Mobile First) ?
 >    - Que signifie `min-width` vs `max-width` ?
@@ -375,7 +372,17 @@ Ajoutez ce code à la fin de votre fichier `styles.css` :
 - Quelle différence voyez-vous entre votre site et un site "amateur" ?
 - Si un client vous demandait d'expliquer pourquoi le responsive est important, que diriez-vous ?
 
-**Test rapide :** Montrez votre site à quelqu'un d'autre. Comprend-il immédiatement que c'est un portfolio de photographe ?
+**Test rapide :** 
+Changeons le gradient CSS de la zone hero par une image en fond d'écran. Pour cela, rechercher dans le fichier CSS ou se situe la zone hero (/* Section Hero */ ligne 64) et ajouter ces propriétés :
+
+```css
+background-image: url('https://images.unsplash.com/photo-1584513707958-07bf650b9026?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+background-size: cover;
+background-position: center;
+```
+
+Montrez votre site à quelqu'un d'autre. Comprend-il immédiatement que c'est un portfolio de photographe ?
+Si vous le souhaitez, vous pouvez changer l'image depuis une banque d'images libres comme unsplash ou vous copier coller l'adresse de l'image dans la valeur de la prorpriété background-image.
 
 ---
 
@@ -389,12 +396,13 @@ Ajoutez ce code à la fin de votre fichier `styles.css` :
 
 > ⚠️ **Note importante** : Une vidéo en arrière-plan peut être lourde. Nous allons voir comment bien l'optimiser.
 
-Modifiez la section hero dans votre `index.html` :
+- Vérifier que vous avez le dossier "ressources" dans votre projet web (à côté du fichier index.htlm et styles.css) avec la vidéo "video-libre1920_1080_30fps.mp4" transmit par le formateur.
+- Modifiez la section hero dans votre `index.html` :
 
 ```html
 <section id="accueil" class="hero">
     <video class="hero-video" autoplay muted loop>
-        <source src="assets/videos/eleonore-studio.mp4" type="video/mp4">
+        <source src="ressources/video-libre1920_1080_30fps.mp4" type="video/mp4">
         <!-- Fallback si la vidéo ne se charge pas -->
     </video>
     <div class="hero-overlay"></div>
@@ -425,8 +433,7 @@ Ajoutez ces styles à votre `styles.css` :
     min-height: 100%;
     width: auto;
     height: auto;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -2;
+    transform: translateX(-50%) translateY(-50%);    
 }
 
 .hero-overlay {
@@ -489,31 +496,25 @@ Ajoutez ces styles à votre `styles.css` :
 }
 ```
 
-```
+**💡 Note** : Si la vidéo ne peux pas se charger, l'image sera affiché et si celle ci rencontre des soucis, ce sera le gradient CSS qui sera affiché.
 
-**💡 Note** : Si vous n'avez pas de vidéo, vous pouvez garder le gradient de fond en commentant les styles vidéo.
+Hésitez pas à changer de vidéos ! Exemple des ressources videos gratuites et libres : https://www.pexels.com/fr-fr/chercher/videos/photographe/
 
-> 🎭 **ANIMATION & EXPÉRIENCE** :
-> 
-> 1. **Test des animations** :
->    - Rechargez la page et observez l'effet d'apparition
->    - Survolez le bouton pour voir l'effet de brillance
->    - Testez la navigation au clavier (Tab pour parcourir)
-> 2. **Décryptage du code** :
->    - Que fait `animation-delay: 0.2s` vs `0.4s` vs `0.6s` ?
->    - Expliquez `transform: translateY(-50%) translateX(-50%)` pour la vidéo
->    - À quoi sert `z-index: -2` et `-1` ?
-> 3. **Expérimentation créative** :
->    - Modifiez la durée d'animation de `1s` à `2s`. Préférez-vous ?
->    - Changez `ease-out` par `ease-in-out`. Ressentez-vous la différence ?
->    - Créez votre propre animation keyframe pour le bouton
-> 4. **Questions de groupe** :
->    - Pourquoi utilise-t-on `autoplay muted` pour la vidéo ?
->    - Quand faut-il éviter les animations ?
->    - Comment rendre les animations accessibles ?
-> 5. **Défi UX** : Proposez 2 autres micro-animations qui amélioreraient l'expérience
+🎭 **ANIMATION & EXPÉRIENCE** :
 
-> 🧠 **Réflexion UX** : Une bonne animation raconte une histoire et guide l'œil. Elle ne doit jamais être gratuite !
+1. **Test des animations** :
+   - Rechargez la page et observez l'effet d'apparition
+   - Survolez le bouton pour voir l'effet de brillance
+   - Testez la navigation au clavier (Tab pour parcourir)
+2. **Expérimentation créative** :
+   - Dans la zone CSS que vous venez de copier coller, une partie concerne l'animation du bouton. Modifiez la durée d'animation de `1s` à `2s`. Préférez-vous ?
+   - Changez `ease-out` par `ease-in-out`. Ressentez-vous la différence ?
+3. **Questions de groupe** :
+   - Pourquoi utilise-t-on `autoplay muted` pour la vidéo ?
+   - Quand faut-il éviter les animations ?
+4. **Défi UX** : Proposez 2 autres micro-animations (sans impléter le code ^^) qui amélioreraient l'expérience
+
+🧠 **Réflexion UX** : Une bonne animation raconte une histoire et guide l'œil. Elle ne doit jamais être gratuite !
 
 ---
 
@@ -526,7 +527,7 @@ Ajoutez ces styles à votre `styles.css` :
 - Quelles animations vous plaisent le plus ?
 - Comment pourriez-vous adapter ce design pour un autre métier (architecte, chef cuisinier, musicien) ?
 
-**Défi créatif :** En 30 secondes, proposez une couleur de thème différente et justifiez votre choix !
+**Défi créatif :** En 30 secondes, proposez une couleur de thème différente et justifiez votre choix avec votre voisin !
 
 ---
 
@@ -534,15 +535,16 @@ Ajoutez ces styles à votre `styles.css` :
 
 **Objectif** : Créer un carrousel interactif et une galerie avec effets
 
-> 🚨 **Attention** : Cette étape est la plus complexe ! Nous entrons dans le JavaScript. Prenez votre temps et n'hésitez pas à poser des questions.
+🚨 **Attention** : Cette étape est la plus complexe ! Nous entrons dans le JavaScript. Prenez votre temps et n'hésitez pas à poser des questions.
 
-> 🤝 **Conseil** : Travaillez en binôme pour cette partie. L'un code, l'autre observe et pose des questions !
+🤝 **Conseil** : Travaillez en binôme pour cette partie. L'un code, l'autre observe et pose des questions !
 
 #### 4.1 Structure HTML du carrousel
 
-> 🏗️ **Architecture** : Avant de coder, observez bien la structure. Un carrousel = container + slides + contrôles + indicateurs.
+🏗️ **Architecture** : Avant de coder, observez bien la structure. Un carrousel = container + slides + contrôles + indicateurs.
 
-Remplacez le contenu de la section portfolio :
+- Vérifiez que vous avez bien le dossier ressources avec les images : "slide-1.jpg, slide-2.jpg et slide-3.jpg, thumb-1.jpg, thumb-2.jpg, thumb-3.jpg et thumb-4.jpg"
+- Remplacez le contenu de la section portfolio :
 
 ```html
 <section id="portfolio" class="portfolio">
@@ -553,21 +555,21 @@ Remplacez le contenu de la section portfolio :
         <div class="carousel">
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="assets/images/photo1.jpg" alt="Œuvre 1">
+                    <img src="ressources/slide-1.jpg" alt="Œuvre 1">
                     <div class="slide-info">
                         <h3>Lumières urbaines</h3>
                         <p>Série photographique sur la ville la nuit</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="assets/images/photo2.jpg" alt="Œuvre 2">
+                    <img src="ressources/slide-2.jpg" alt="Œuvre 2">
                     <div class="slide-info">
                         <h3>Portraits d'âmes</h3>
                         <p>Exploration de l'émotion humaine</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="assets/images/photo3.jpg" alt="Œuvre 3">
+                    <img src="ressources/slide-3.jpg" alt="Œuvre 3">
                     <div class="slide-info">
                         <h3>Nature abstraite</h3>
                         <p>Formes et textures naturelles</p>
@@ -592,25 +594,25 @@ Remplacez le contenu de la section portfolio :
             <h3>Galerie</h3>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="assets/images/thumb1.jpg" alt="Miniature 1">
+                    <img src="ressources/thumb-1.jpg" alt="Miniature 1">
                     <div class="gallery-overlay">
                         <span>Voir plus</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/images/thumb2.jpg" alt="Miniature 2">
+                    <img src="ressources/thumb-2.jpg" alt="Miniature 2">
                     <div class="gallery-overlay">
                         <span>Voir plus</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/images/thumb3.jpg" alt="Miniature 3">
+                    <img src="ressources/thumb-3.jpg" alt="Miniature 3">
                     <div class="gallery-overlay">
                         <span>Voir plus</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/images/thumb4.jpg" alt="Miniature 4">
+                    <img src="ressources/thumb-4.jpg" alt="Miniature 4">
                     <div class="gallery-overlay">
                         <span>Voir plus</span>
                     </div>
@@ -791,7 +793,7 @@ Ajoutez ces styles à votre `styles.css` :
 
 #### 4.3 JavaScript pour le carrousel
 
-Créez un fichier `script.js` et ajoutez ce code :
+Créez un fichier `script.js` à coté du fichier index.html et styles.css et ajoutez ce code :
 
 ```javascript
 // Variables globales
@@ -858,33 +860,34 @@ N'oubliez pas d'ajouter le script à votre HTML avant la fermeture du body :
 </html>
 ```
 
-> 🎯 **MAÎTRISE JAVASCRIPT & INTERACTIVITÉ** :
-> 
-> 1. **Test complet** :
->    - Cliquez sur les flèches ← →
->    - Cliquez sur les points indicateurs
->    - Utilisez les flèches du clavier
->    - Attendez 5 secondes pour voir le défilement automatique
-> 2. **Compréhension du code** :
->    - Ligne par ligne, expliquez ce que fait la fonction `changeSlide()`
->    - Pourquoi utilise-t-on `classList.add()` et `classList.remove()` ?
->    - À quoi sert l'opérateur modulo dans le bouclage ?
-> 3. **Expérimentations** :
->    - Changez `setInterval(autoSlide, 5000)` à `3000`. Que se passe-t-il ?
->    - Ajoutez `console.log('Slide actuelle: ', currentSlideIndex)` dans changeSlide()
->    - Modifiez la condition de bouclage pour voir comment ça marche
-> 4. **Questions de réflexion** :
->    - Pourquoi vérifier si les éléments existent avant d'ajouter des événements ?
->    - Comment améliorer l'accessibilité du carrousel ?
->    - Que se passerait-il sans les attributs `onclick` ?
-> 5. **Challenge avancé** : 
->    - Ajoutez une fonction pour mettre en pause le défilement au survol
->    - Créez un compteur "Image 1 sur 3" qui s'affiche
-> 6. **Partage de groupe** : Expliquez à un autre binôme comment fonctionne le système d'indicateurs
+🎯 **MAÎTRISE JAVASCRIPT & INTERACTIVITÉ** :
 
-> 🧠 **Concept fondamental** : JavaScript manipule le DOM (Document Object Model). Chaque `querySelector()` récupère un élément HTML pour le modifier !
+1. **Test complet** :
+   - Cliquez sur les flèches ← →
+   - Cliquez sur les points indicateurs
+   - Utilisez les flèches du clavier
+   - Attendez 5 secondes pour voir le défilement automatique
+2. **Compréhension du code** :
+   - Ligne par ligne, expliquez ce que fait la fonction `changeSlide()`
+   - Pourquoi utilise-t-on `classList.add()` et `classList.remove()` ?
+   - À quoi sert l'opérateur modulo dans le bouclage ?
+3. **Expérimentations** :
+   - Changez `setInterval(autoSlide, 5000)` à `3000`. Que se passe-t-il ?
+   - Ajoutez `console.log('Slide actuelle: ', currentSlideIndex)` dans changeSlide()
+   - Modifiez la condition de bouclage pour voir comment ça marche
+4. **Questions de réflexion** :
+   - Pourquoi vérifier si les éléments existent avant d'ajouter des événements ?
+   - Comment améliorer l'accessibilité du carrousel ?
+   - Que se passerait-il sans les attributs `onclick` ?
+5. **Challenge avancé** : 
+   - Ajoutez une fonction pour mettre en pause le défilement au survol
+   - Créez un compteur "Image 1 sur 3" qui s'affiche
+6. **Partage de groupe** : Expliquez à un autre binôme comment fonctionne le système d'indicateurs
+ 🧠 **Concept fondamental** : JavaScript manipule le DOM (Document Object Model). Chaque `querySelector()` récupère un élément HTML pour le modifier !
 
-> 💼 **Contexte pro** : Ce type de carrousel est présent sur 80% des sites e-commerce. Vous venez d'acquérir une compétence très demandée !
+💼 **Contexte pro** : Ce type de carrousel est présent sur 80% des sites e-commerce. Vous venez d'acquérir une compétence très demandée !
+
+Vous pouvez changer et/ou ajouter des images de slides, elles sont au format 2000*1000px et les miniatures en 500 par 300px
 
 ### 🚀 Étape 5 : Optimisation et Validation (30min)
 
@@ -892,24 +895,9 @@ N'oubliez pas d'ajouter le script à votre HTML avant la fermeture du body :
 
 > 🏁 **Dernière ligne droite** : Vous avez un site qui fonctionne ! Maintenant, rendons-le professionnel avec les bonnes pratiques.
 
-#### 5.1 Créer des images de placeholder
+#### 5.1 Optimisation des médias
 
-Si vous n'avez pas d'images, vous pouvez utiliser des services de placeholder :
-
-```css
-/* Images de placeholder temporaires */
-.carousel-slide img[src*="photo1.jpg"] {
-    background: url('https://picsum.photos/800/500?random=1') center/cover;
-}
-
-.carousel-slide img[src*="photo2.jpg"] {
-    background: url('https://picsum.photos/800/500?random=2') center/cover;
-}
-
-.carousel-slide img[src*="photo3.jpg"] {
-    background: url('https://picsum.photos/800/500?random=3') center/cover;
-}
-```
+Convertir les images au format webp. Réfléchir aux autres optimisations possibles sur les médias.
 
 #### 5.2 Optimisation CSS
 
@@ -920,11 +908,6 @@ Ajoutez ces optimisations :
 .carousel-slide img,
 .gallery-item img {
     will-change: transform;
-}
-
-/* Chargement progressif */
-img {
-    loading: lazy;
 }
 
 /* Réduction de motion pour l'accessibilité */
@@ -942,30 +925,26 @@ img {
 1. **HTML** : Allez sur [validator.w3.org](https://validator.w3.org)
 2. **CSS** : Allez sur [jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/)
 
-> 🎖️ **FINALISATION & QUALITÉ PRO** :
-> 
-> 1. **Tests de validation** :
->    - Validez votre HTML et corrigez les erreurs
->    - Validez votre CSS et analysez les warnings
->    - Testez avec un lecteur d'écran (extension ChromeVox)
-> 2. **Performance** :
->    - Ouvrez F12 → Lighthouse → Générer un rapport
->    - Analysez vos scores Performance, Accessibilité, SEO
->    - Qu'est-ce qui peut être amélioré ?
-> 3. **Questions de professionnalisation** :
->    - Pourquoi valider son code est-il important ?
->    - À quoi sert `loading="lazy"` ?
->    - Que signifie `prefers-reduced-motion` et pourquoi c'est crucial ?
-> 4. **Test utilisateur** :
->    - Faites tester votre site par un autre binôme
->    - Notez leurs retours UX
->    - Qu'est-ce qui les a surpris positivement/négativement ?
-> 5. **Auto-évaluation** :
->    - Sur une échelle de 1 à 10, comment notez-vous votre site ?
->    - Quelles sont vos 3 fiertés dans ce projet ?
->    - Qu'aimeriez-vous améliorer ?
+🎖️ **FINALISATION & QUALITÉ PRO** :
 
-> 🏆 **Bravo !** Vous venez de créer un portfolio professionnel complet ! Ce type de projet vaut 500-1500€ sur le marché freelance.
+1. **Tests de validation** :
+   - Validez votre HTML et corrigez les erreurs
+   - Validez votre CSS et analysez les warnings   
+2. **Performance** :
+   - Ouvrez F12 → Lighthouse → Générer un rapport
+   - Analysez vos scores Performance, Accessibilité, SEO
+   - Qu'est-ce qui peut être amélioré ?
+3. **Questions de professionnalisation** :
+   - Pourquoi valider son code est-il important ?
+4. **Test utilisateur** :
+   - Faites tester votre site par un autre binôme
+   - Notez leurs retours UX
+   - Qu'est-ce qui les a surpris positivement/négativement ?
+5. **Auto-évaluation** :
+   - Sur une échelle de 1 à 10, comment notez-vous votre site ?
+   - Quelles sont vos 3 fiertés dans ce projet ?
+   - Qu'aimeriez-vous améliorer ?
+🏆 **Bravo !** Vous venez de créer un portfolio professionnel complet ! Ce type de projet vaut 500-1500€ sur le marché freelance.
 
 ---
 
@@ -989,8 +968,7 @@ Si vous deviez vendre ce portfolio à un vrai client, quel prix demanderiez-vous
 2. **Filtres** : Système de filtres par catégorie
 3. **Lazy Loading** : Chargement différé des images
 4. **Mode sombre** : Toggle pour basculer entre thème clair/sombre
-5. **Animations GSAP** : Animations plus sophistiquées
-6. **Contact Form** : Formulaire de contact fonctionnel
+5. **Contact Form** : Formulaire de contact fonctionnel
 
 ## 📝 Checklist de Validation
 
@@ -1011,9 +989,7 @@ Si vous deviez vendre ce portfolio à un vrai client, quel prix demanderiez-vous
 
 1. **Apprentissage** : Quelle technique avez-vous trouvée la plus difficile ? La plus intéressante ?
 2. **Compréhension** : Expliquez en une phrase ce qu'est le responsive design
-3. **JavaScript** : Avant aujourd'hui, le JavaScript vous faisait-il peur ? Et maintenant ?
-4. **Créativité** : Si vous deviez refaire ce projet, que changeriez-vous dans le design ?
-5. **Professionnel** : Vous sentez-vous capable de créer un vrai portfolio pour un client ?
+3. **Créativité** : Si vous deviez refaire ce projet, que changeriez-vous dans le design ?
 
 ### Discussion de groupe
 
@@ -1032,7 +1008,7 @@ Si vous deviez vendre ce portfolio à un vrai client, quel prix demanderiez-vous
 
 **Mes prochains objectifs** :
 - [ ] Apprendre un framework CSS (Bootstrap, Tailwind)
-- [ ] Approfondir JavaScript (ES6+, APIs)
+- [ ] Approfondir JavaScript
 - [ ] Optimiser un site pour la performance
 - [ ] Mise en ligne
 
