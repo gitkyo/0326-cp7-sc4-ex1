@@ -868,26 +868,14 @@ N'oubliez pas d'ajouter le script à votre HTML avant la fermeture du body :
    - Utilisez les flèches du clavier
    - Attendez 5 secondes pour voir le défilement automatique
 2. **Compréhension du code** :
-   - Ligne par ligne, expliquez ce que fait la fonction `changeSlide()`
-   - Pourquoi utilise-t-on `classList.add()` et `classList.remove()` ?
-   - À quoi sert l'opérateur modulo dans le bouclage ?
+   - Expliquez ce que fait la fonction `changeSlide()`
 3. **Expérimentations** :
    - Changez `setInterval(autoSlide, 5000)` à `3000`. Que se passe-t-il ?
-   - Ajoutez `console.log('Slide actuelle: ', currentSlideIndex)` dans changeSlide()
-   - Modifiez la condition de bouclage pour voir comment ça marche
-4. **Questions de réflexion** :
-   - Pourquoi vérifier si les éléments existent avant d'ajouter des événements ?
-   - Comment améliorer l'accessibilité du carrousel ?
-   - Que se passerait-il sans les attributs `onclick` ?
-5. **Challenge avancé** : 
-   - Ajoutez une fonction pour mettre en pause le défilement au survol
-   - Créez un compteur "Image 1 sur 3" qui s'affiche
-6. **Partage de groupe** : Expliquez à un autre binôme comment fonctionne le système d'indicateurs
- 🧠 **Concept fondamental** : JavaScript manipule le DOM (Document Object Model). Chaque `querySelector()` récupère un élément HTML pour le modifier !
+4. **Partage de groupe** : Essayer de lire le code et supposer ce que fait chaque ligne. Discutez en avec votre binôme
 
-💼 **Contexte pro** : Ce type de carrousel est présent sur 80% des sites e-commerce. Vous venez d'acquérir une compétence très demandée !
+🧠 **Concept fondamental** : JavaScript manipule le DOM (Document Object Model). En gros n'importe quel partie HTML ou CSS de la page. C'est lui qui permet le mouvement et la plupart des animations dans les pages.
 
-Vous pouvez changer et/ou ajouter des images de slides, elles sont au format 2000*1000px et les miniatures en 500 par 300px
+💼 **Personalisation** : Vous pouvez changer et/ou ajouter des images de slides, elles sont au format 2000*1000px et les miniatures en 500 par 300px
 
 ### 🚀 Étape 5 : Optimisation et Validation (30min)
 
