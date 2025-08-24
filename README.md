@@ -1,6 +1,6 @@
 # 📸 Exercice Pratique de 5h : "Le Portfolio d'Éléonore, Photographe d'Art"
 
-> **Mission** : Créer la page d'accueil du portfolio en ligne d'Éléonore, une photographe d'art contemporain.
+**Mission** : Créer la page d'accueil du portfolio en ligne d'Éléonore, une photographe d'art contemporain.
 
 ## 🎯 Contexte de l'Exercice
 
@@ -12,7 +12,7 @@ Vous êtes un(e) **Concepteur Designer UI** et votre cliente Éléonore souhaite
 
 **Votre mission** : Transformer sa vision artistique en une vitrine numérique professionnelle, responsive et optimisée pour le web.
 
-> 💡 **Pourquoi cet exercice ?** Vous n'êtes pas juste en train de "coder", vous créez une expérience qui va permettre à une artiste de partager son travail avec le monde entier !
+💡 **Pourquoi cet exercice ?** Vous n'êtes pas juste en train de "coder", vous créez une expérience qui va permettre à une artiste de partager son travail avec le monde entier !
 
 ## 🛠️ Outils et Technologies
 
@@ -23,9 +23,10 @@ Vous êtes un(e) **Concepteur Designer UI** et votre cliente Éléonore souhaite
 
 ## 🎓 Philosophie d'Apprentissage
 
-> **⚠️ IMPORTANT** : Ce n'est PAS un exercice de copier-coller !
+**⚠️ IMPORTANT** : Ce n'est PAS un exercice de copier-coller !
 
 **Votre approche doit être** :
+
 1. **LIRE** le code avant de le copier
 2. **COMPRENDRE** ce que fait chaque partie
 3. **TESTER** chaque étape dans votre navigateur
@@ -33,7 +34,7 @@ Vous êtes un(e) **Concepteur Designer UI** et votre cliente Éléonore souhaite
 5. **QUESTIONNER** tout ce qui n'est pas clair
 6. **PARTAGER** vos découvertes avec les autres
 
-> 🤝 **Règle d'or** : Si vous ne comprenez pas une ligne de code, demandez ! Il n'y a aucune question stupide en programmation.
+🤝 **Règle d'or** : Si vous ne comprenez pas une ligne de code, demandez ! Il n'y a aucune question stupide en programmation.
 
 ## 🚀 Mindset du Développeur
 
@@ -45,19 +46,19 @@ Vous êtes un(e) **Concepteur Designer UI** et votre cliente Éléonore souhaite
 
 ## 📋 Progression Détaillée de l'Exercice (5h)
 
-> ⏰ **Gestion du temps** : Chaque étape a un timing indicatif, mais l'important est de COMPRENDRE, pas de finir vite !
+⏰ **Gestion du temps** : Chaque étape a un timing indicatif, mais l'important est de COMPRENDRE, pas de finir vite !
 
-> 👥 **Travail en binôme recommandé** : Un qui code, un qui observe et questionne. Alternez les rôles !
+👥 **Travail en binôme recommandé** : Un qui code, un qui observe et questionne. Alternez les rôles !
 
 ### ⚡ Étape 1 : La Fondation (1h)
 
 **Objectif** : Créer la structure de base de la page d'accueil
 
-> 🏗️ **Concept architectural** : Comme un bâtiment, un site web a besoin de fondations solides. La structure HTML est votre béton armé !
+🏗️ **Concept architectural** : Comme un bâtiment, un site web a besoin de fondations solides. La structure HTML est votre béton armé !
 
 #### 1.1 Structure HTML de base
 
-> 🤔 **Avant de commencer** : Prenez 2 minutes pour observer la structure ci-dessous. Pouvez-vous identifier les différentes parties d'une page web ?
+🤔 **Avant de commencer** : Prenez 2 minutes pour observer la structure ci-dessous. Pouvez-vous identifier les différentes parties d'une page web ?
 
 Créez un fichier `index.html` et copiez cette structure :
 
@@ -124,15 +125,16 @@ Créez un fichier `index.html` et copiez cette structure :
 </html>
 ```
 
-> 🔍 **TEST & COMPRÉHENSION** : 
-> 1. **Testez** : Ouvrez votre fichier `index.html` dans le navigateur. Que voyez-vous ?
-> 2. **Analysez** : Trouvez dans le code les balises `<header>`, `<main>`, `<section>`. À quoi servent-elles ?
-> 3. **Réflexion** : Pourquoi utilise-t-on `<nav>` plutôt qu'une simple `<div>` pour la navigation ?
-> 4. **Question groupe** : Discutez en binôme : que signifie "structure sémantique" ?
+🔍 **TEST & COMPRÉHENSION** :
+
+1. **Testez** : Ouvrez votre fichier `index.html` dans le navigateur. Que voyez-vous ?
+2. **Analysez** : Trouvez dans le code les balises `<header>`, `<main>`, `<section>`. À quoi servent-elles ?
+3. **Réflexion** : Pourquoi utilise-t-on `<nav>` plutôt qu'une simple `<div>` pour la navigation ?
+4. **Question groupe** : Discutez en binôme : que signifie "structure sémantique" ?
 
 #### 1.2 Styles CSS de base
 
-> 💡 **Avant de coder** : Ce CSS va transformer votre page HTML basique en quelque chose de beau. Observez les sélecteurs utilisés.
+💡 **Avant de coder** : Ce CSS va transformer votre page HTML basique en quelque chose de beau. Observez les sélecteurs utilisés.
 
 Créez un fichier `styles.css` et ajoutez ces styles :
 
@@ -269,7 +271,7 @@ body {
 3. **Questions importantes** :
    - Sur le bouton, pourquoi utilise-t-on `border-radius: 50px;` ?
    - Sur la section de class hero, monter le gradient CSS à votre voisin, essayer de modifier des valeurs et tester.
-4. **Défi** : Modifiez les couleurs du gradient pour créer votre propre ambiance, vous pouvez utiliser des générateurs de code gradient css comme : https://cssgradient.io/
+4. **Défi** : Modifiez les couleurs du gradient pour créer votre propre ambiance, vous pouvez utiliser des générateurs de code gradient css comme : <https://cssgradient.io/>
 5. **Discussion** : En groupe, identifiez 3 propriétés CSS que vous ne connaissiez pas
 
 💭 **Piste de réflexion** : Ce CSS utilise des techniques modernes (flexbox, gradients). Pourquoi est-ce important de les maîtriser aujourd'hui ?
@@ -278,11 +280,11 @@ body {
 
 **Objectif** : Rendre le site adaptatif sur tous les écrans
 
-> 🤓 **Concept clé** : Le responsive design n'est pas juste une option, c'est une NÉCESSITÉ ! Plus de 50% du trafic web vient du mobile.
+🤓 **Concept clé** : Le responsive design n'est pas juste une option, c'est une NÉCESSITÉ ! Plus de 50% du trafic web vient du mobile.
 
 #### 2.1 Ajoutez les Media Queries
 
-> 🎯 **Stratégie** : Nous allons utiliser l'approche "Mobile First" - d'abord le mobile, puis on adapte pour les écrans plus grands.
+🎯 **Stratégie** : Nous allons utiliser l'approche "Mobile First" - d'abord le mobile, puis on adapte pour les écrans plus grands.
 
 Ajoutez ce code à la fin de votre fichier `styles.css` :
 
@@ -343,37 +345,38 @@ Ajoutez ce code à la fin de votre fichier `styles.css` :
 
 **🔍 Test** : Redimensionnez votre navigateur pour voir les changements !
 
-> 🚀 **TESTS & DÉCOUVERTE** :
-> 
-> 1. **Test multi-écrans** : 
->    - Ouvrez les outils de développement (F12)
->    - Cliquez sur l'icône mobile/tablette
->    - Testez : iPhone SE (375px), iPad (768px), Desktop (1200px)
-> 2. **Expérimentation** :
->    - Pour la zone CSS de la media queries pour tablettes, changez le breackpoint (points de ruptures) `768px` par `600px`. Que remarquez-vous ?
->    - Ajoutez `border: 2px solid red;` à `.container` temporairement pour voir les zones. Changez la taille de la fenêtre pour observer les changements sur la zone rouge.
-> 3. **Questions cruciales** :
->    - Pourquoi commence-t-on par mobile (Mobile First) ?
->    - Que signifie `min-width` vs `max-width` ?
->    - À votre avis, quels sont les breakpoints les plus importants ?
-> 4. **Challenge** : Créez un breakpoint pour très grands écrans (min-width: 1440px)
-> 5. **Partage** : Montrez à votre binôme comment votre site s'adapte
+🚀 **TESTS & DÉCOUVERTE** :
 
-> 💡 **Concept important** : Un bon responsive ne cache pas de contenu, il le réorganise intelligemment !
+1. **Test multi-écrans** :
+   - Ouvrez les outils de développement (F12)
+   - Cliquez sur l'icône mobile/tablette
+   - Testez : iPhone SE (375px), iPad (768px), Desktop (1200px)
+2. **Expérimentation** :
+   - Pour la zone CSS de la media queries pour tablettes, changez le breackpoint (points de ruptures) `768px` par `600px`. Que remarquez-vous ?
+   - Ajoutez `border: 2px solid red;` à `.container` temporairement pour voir les zones. Changez la taille de la fenêtre pour observer les changements sur la zone rouge.
+3. **Questions cruciales** :
+   - Pourquoi commence-t-on par mobile (Mobile First) ?
+   - Que signifie `min-width` vs `max-width` ?
+   - À votre avis, quels sont les breakpoints les plus importants ?
+4. **Challenge** : Créez un breakpoint pour très grands écrans (min-width: 1440px)
+5. **Partage** : Montrez à votre binôme comment votre site s'adapte
+
+💡 **Concept important** : Un bon responsive ne cache pas de contenu, il le réorganise intelligemment !
 
 ---
 
 ## 🔄 Pause Réflexion 1 (5 min)
 
-> **Temps de digestion** : Vous venez de créer les bases et le responsive. Avant de continuer :
+**Temps de digestion** : Vous venez de créer les bases et le responsive. Avant de continuer :
 
 **En binôme, discutez :**
+
 - Qu'est-ce qui vous a le plus surpris jusqu'ici ?
 - Quelle différence voyez-vous entre votre site et un site "amateur" ?
 - Si un client vous demandait d'expliquer pourquoi le responsive est important, que diriez-vous ?
 
-**Test rapide :** 
-Changeons le gradient CSS de la zone hero par une image en fond d'écran. Pour cela, rechercher dans le fichier CSS ou se situe la zone hero (/* Section Hero */ ligne 64) et ajouter ces propriétés :
+**Test rapide :**
+Changeons le gradient CSS de la zone hero par une image en fond d'écran. Pour cela, rechercher dans le fichier CSS ou se situe la zone hero (/*Section Hero*/ ligne 64) et ajouter ces propriétés :
 
 ```css
 background-image: url('https://images.unsplash.com/photo-1584513707958-07bf650b9026?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -390,11 +393,11 @@ Si vous le souhaitez, vous pouvez changer l'image depuis une banque d'images lib
 
 **Objectif** : Ajouter une vidéo de fond et des animations
 
-> 🎨 **Pourquoi des animations ?** Les micro-animations guident l'utilisateur et rendent l'expérience plus agréable. Mais attention : trop d'animations tuent l'animation !
+🎨 **Pourquoi des animations ?** Les micro-animations guident l'utilisateur et rendent l'expérience plus agréable. Mais attention : trop d'animations tuent l'animation !
 
 #### 3.1 Ajout de la vidéo de fond
 
-> ⚠️ **Note importante** : Une vidéo en arrière-plan peut être lourde. Nous allons voir comment bien l'optimiser.
+⚠️ **Note importante** : Une vidéo en arrière-plan peut être lourde. Nous allons voir comment bien l'optimiser.
 
 - Vérifier que vous avez le dossier "ressources" dans votre projet web (à côté du fichier index.htlm et styles.css) avec la vidéo "video-libre1920_1080_30fps.mp4" transmit par le formateur.
 - Modifiez la section hero dans votre `index.html` :
@@ -498,7 +501,7 @@ Ajoutez ces styles à votre `styles.css` :
 
 **💡 Note** : Si la vidéo ne peux pas se charger, l'image sera affiché et si celle ci rencontre des soucis, ce sera le gradient CSS qui sera affiché.
 
-Hésitez pas à changer de vidéos ! Exemple des ressources videos gratuites et libres : https://www.pexels.com/fr-fr/chercher/videos/photographe/
+Hésitez pas à changer de vidéos ! Exemple des ressources videos gratuites et libres : <https://www.pexels.com/fr-fr/chercher/videos/photographe/>
 
 🎭 **ANIMATION & EXPÉRIENCE** :
 
@@ -520,9 +523,10 @@ Hésitez pas à changer de vidéos ! Exemple des ressources videos gratuites et 
 
 ## 🔄 Pause Réflexion 2 (5 min)
 
-> **Checkpoint créatif** : Votre site commence à avoir du caractère !
+**Checkpoint créatif** : Votre site commence à avoir du caractère !
 
 **Questions individuelles :**
+
 - Votre site vous fait-il envie ? Pourquoi ?
 - Quelles animations vous plaisent le plus ?
 - Comment pourriez-vous adapter ce design pour un autre métier (architecte, chef cuisinier, musicien) ?
@@ -881,7 +885,7 @@ N'oubliez pas d'ajouter le script à votre HTML avant la fermeture du body :
 
 **Objectif** : Optimiser les performances et valider le code
 
-> 🏁 **Dernière ligne droite** : Vous avez un site qui fonctionne ! Maintenant, rendons-le professionnel avec les bonnes pratiques.
+🏁 **Dernière ligne droite** : Vous avez un site qui fonctionne ! Maintenant, rendons-le professionnel avec les bonnes pratiques.
 
 #### 5.1 Optimisation des médias
 
@@ -917,7 +921,7 @@ Ajoutez ces optimisations :
 
 1. **Tests de validation** :
    - Validez votre HTML et corrigez les erreurs
-   - Validez votre CSS et analysez les warnings   
+   - Validez votre CSS et analysez les warnings
 2. **Performance** :
    - Ouvrez F12 → Lighthouse → Générer un rapport
    - Analysez vos scores Performance, Accessibilité, SEO
@@ -938,9 +942,10 @@ Ajoutez ces optimisations :
 
 ## 🔄 Pause Réflexion Finale (10 min)
 
-> **Moment de fierté** : Regardez le chemin parcouru !
+**Moment de fierté** : Regardez le chemin parcouru !
 
 **Comparez :**
+
 - Votre fichier HTML vide du début VS votre portfolio complet maintenant
 - Votre niveau de confiance en CSS/JS avant VS maintenant
 - Votre compréhension du "responsive" avant VS maintenant
@@ -971,7 +976,7 @@ Si vous deviez vendre ce portfolio à un vrai client, quel prix demanderiez-vous
 
 ## 🤔 Bilan & Réflexion Collective
 
-> 💬 **Session de debriefing** : Prenez 15 minutes en groupe pour échanger
+💬 **Session de debriefing** : Prenez 15 minutes en groupe pour échanger
 
 ### Questions de réflexion individuelle
 
@@ -988,6 +993,7 @@ Si vous deviez vendre ce portfolio à un vrai client, quel prix demanderiez-vous
 ### Auto-évaluation
 
 **Je me sens capable de** :
+
 - [ ] Créer une structure HTML sémantique
 - [ ] Appliquer des styles CSS simples
 - [ ] Rendre un site responsive
@@ -995,6 +1001,7 @@ Si vous deviez vendre ce portfolio à un vrai client, quel prix demanderiez-vous
 - [ ] Valider et déboguer mon code
 
 **Mes prochains objectifs** :
+
 - [ ] Apprendre un framework CSS (Bootstrap, Tailwind)
 - [ ] Approfondir JavaScript
 - [ ] Optimiser un site pour la performance
